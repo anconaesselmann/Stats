@@ -1,0 +1,6 @@
+framework module Stats {
+  umbrella header "Stats-umbrella.h"
+
+  export *
+  module * { export * }
+}

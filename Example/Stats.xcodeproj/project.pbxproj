@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		979E7F2820147ED1000A7B93 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979E7F2720147ED1000A7B93 /* Stats.swift */; };
 		C522B5A73507DCB6A237B9CC /* Pods_Stats_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E95EA66A359B052C8D7523E /* Pods_Stats_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E95EA66A359B052C8D7523E /* Pods_Stats_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stats_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1651661E6974A7F3F6E03C /* Pods-Stats_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stats_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stats_Tests/Pods-Stats_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		5352FA859B541684C87BBD11 /* Stats.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Stats.podspec; path = ../Stats.podspec; sourceTree = "<group>"; };
+		5352FA859B541684C87BBD11 /* Stats.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Stats.podspec; path = ../Stats.podspec; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Stats_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Stats_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		749D4D2AE46EC671AA27BC5C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		94518BB0AD99A5EEA78F4598 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		749D4D2AE46EC671AA27BC5C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		94518BB0AD99A5EEA78F4598 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		979E7F2720147ED1000A7B93 /* Stats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stats.swift; path = ../../Stats/Classes/Stats.swift; sourceTree = "<group>"; };
 		C3A3BD142C0A012D7518FDAE /* Pods-Stats_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stats_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stats_Tests/Pods-Stats_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +49,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				979E7F2620147EC6000A7B93 /* Stats */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -90,6 +93,14 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		979E7F2620147EC6000A7B93 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				979E7F2720147ED1000A7B93 /* Stats.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
 		986EC092F5CC52DF6791995E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,10 +142,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -230,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				979E7F2820147ED1000A7B93 /* Stats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
