@@ -4,8 +4,8 @@
 
 import Foundation
 
-open class Stats {
-    static func median(_ array: [Double]) -> Double? {
+public class Stats {
+    public static func median(_ array: [Double]) -> Double? {
         guard !array.isEmpty else { return nil }
         let sorted = array.sorted()
         print(sorted)
@@ -18,12 +18,12 @@ open class Stats {
         }
     }
     
-    static func average(_ array: [Double]) -> Double? {
+    public static func average(_ array: [Double]) -> Double? {
         guard !array.isEmpty, let sum = self.sum(array) else { return nil }
         return sum / Double(array.count)
     }
     
-    static func sum(_ array: [Double]) -> Double? {
+    public static func sum(_ array: [Double]) -> Double? {
         guard !array.isEmpty else { return nil }
         return array.reduce(0, +)
     }
